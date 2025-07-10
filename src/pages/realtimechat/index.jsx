@@ -91,7 +91,7 @@ export default function RealtimeChat({ data }) {
   return (
     <div className="chat-container-cyber" ref={messageRef} style={chatContainerStyle}>
       {loadingInitial && (
-        <div className="text-center text-cyber mt-3">
+        <div className="text-center text-white text-cyber mt-3">
           <span>Caricamento messaggi...</span>
         </div>
       )}
@@ -101,7 +101,7 @@ export default function RealtimeChat({ data }) {
         </div>
       )}
       {!loadingInitial && !error && messages.length === 0 && (
-        <div className="text-center text-cyber mt-3">
+        <div className="text-center  text-white text-cyber mt-3">
           <span>Nessun messaggio ancora. Inizia a chattare!</span>
         </div>
       )}
