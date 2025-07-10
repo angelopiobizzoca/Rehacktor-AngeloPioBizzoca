@@ -66,7 +66,8 @@ export default function Header() {
   return (
     <Navbar style={{ backgroundColor: 'var(--bg-light)' }} variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand style={{ color: 'var(--primary)' }}>
+        <Navbar.Brand  as={Link}
+                  to="/" style={{ color: 'var(--primary)' }}>
           Rehacktor Gameshop
         </Navbar.Brand>
 
