@@ -76,9 +76,10 @@ export default function RegisterPage() {
   };
 
   return (
+    <div className="page-wrapper-cyber">
     <Container className="page-wrapper-cyber d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
       <Row className="w-100">
-        <Col xs={12} md={6} lg={3} className="mx-auto">
+        <Col xs={12} md={6} lg={4} className="mx-auto">
           <div className="form-container-cyber">
             <form onSubmit={onSubmit} noValidate className="form-cyber">
               <h2 className="form-title-cyber">Registrati</h2>
@@ -171,5 +172,6 @@ export default function RegisterPage() {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
