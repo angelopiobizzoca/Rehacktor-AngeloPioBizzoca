@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { supabase } from "../../pages/supabase/client-supabase";
 import SessionContext from "../../context/SessionContext";
+import { Link } from "react-router"; 
 
 export default function ToggleFavorite({ data }) {
   const { session } = useContext(SessionContext);
@@ -96,7 +97,7 @@ return (
         </button>
       )
     ) : (
-      <span className="text-muted small text-center">
+      <span className="text-white access small text-center">
         Accedi per aggiungere ai preferiti
       </span>
     )}
